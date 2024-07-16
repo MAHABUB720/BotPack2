@@ -1,14 +1,16 @@
 module.exports.config = {
-    name: "autosend67",
-    version: "0.0.2",
-    permission: 0,
-    prefix: true,
-    credits: "Imran",
-    description: "sad video",
-    category: "user",
-    usages: "",
-      cooldowns: 5
+  name: "autosend",
+  version: "1.0.0",
+  hasPermssion: 0,
+  credits: "Blue & Yan Maglinte",
+  description: "Counts the number of words, paragraphs, and alphanumeric characters in a given input string.",
+  usePrefix: true,
+  commandCategory: "utilities",
+  usages: "count words, paragraphs, and alphanumerics [input]",
+  cooldowns: 5,
+  dependencies: {}
 };
+
 const r = a => a[Math.floor(Math.random()*a.length)],
 {
   get
