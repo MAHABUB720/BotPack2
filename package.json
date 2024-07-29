@@ -5,9 +5,9 @@
   "main": "main.js",
   "scripts": {
     
-    "scripts": {
-        "start": "node --trace-warnings --use_strict --async-stack-traces utils/Mahabuba.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node --trace-warnings --use_strict --async-stack-traces utils/Mahabuba.js",
+    "login": "node login",
+    "test": "node --trace-warnings --use_strict --async-stack-traces main"
   },
   "presets": [
     "@babel/preset-env"
