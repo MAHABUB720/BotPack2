@@ -1,5 +1,5 @@
 module.exports.config = {
-    name: "ig",
+    name: `${global.config.PREFIX}`,
     version: "1.0.0",
     hasPermssion: 0,
     credits: "MR-Imran",
