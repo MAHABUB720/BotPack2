@@ -1,14 +1,17 @@
 module.exports.config = {
-    name: "?",
-    version: "1.0.0",
-    hasPermssion: 0,
-    credits: "MR-Imran",
-    description: "video",
-    commandCategory: "Box",
-    usages: "",
-    cooldowns: 0,
-    dependencies: []
+  name: 'ig',
+  version: '1.1.0',
+  hasPermssion: 0,
+  credits: 'Yan Maglinte | Liane Cagara',
+  description: 'An AI command using Hercai API!',
+  usePrefix: false,
+  allowPrefix: true,
+  commandCategory: 'chatbots',
+  usages: 'Ai [prompt]',
+  cooldowns: 5,
 };
+
+
 
 module.exports.run = async function ({ api, event, args }) {
     const axios = require("axios");
