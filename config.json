@@ -23,7 +23,7 @@
   "commandDisabled": [],
   "eventDisabled": [],
   "BOTNAME": "Bot",
-  "PREFIX": "?",
+  "PREFIX": "/",
   "ADMINBOT": [
     "100014754734049",
     ""
