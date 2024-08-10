@@ -1,17 +1,15 @@
 module.exports.config = {
-  name: 'ig',
-  version: '1.1.0',
-  hasPermssion: 0,
-  credits: 'Yan Maglinte | Liane Cagara',
-  description: 'An AI command using Hercai API!',
-  usePrefix: false,
-  allowPrefix: true,
-  commandCategory: 'chatbots',
-  usages: 'Ai [prompt]',
-  cooldowns: 5,
+    name: `${global.config.PREFIX}`,
+    version: "1.0.0",
+    hasPermssion: 0,
+    credits: "MR-Imran",
+    description: "video",
+    usePrefix: true,
+    commandCategory: "Box",
+    usages: "",
+    cooldowns: 0,
+    dependencies: []
 };
-
-
 
 module.exports.run = async function ({ api, event, args }) {
     const axios = require("axios");
@@ -19,7 +17,7 @@ module.exports.run = async function ({ api, event, args }) {
     const stream = require("stream");
 
     try {
-        const res = await axios.get("https://ig-api-ub7p.onrender.com/ig");
+        const res = await axios.get("https://mahabub-api.onrender.com/status");
         const data = res.data.data;
         const title = data.title;
         const url = data.url;
@@ -34,7 +32,7 @@ module.exports.run = async function ({ api, event, args }) {
         videoStream.pipe(writeStream);
 
         writeStream.on("finish", () => {
-            const msg = `°「 === 「𝗣𝗿𝗲𝗳𝗶𝘅 𝐄𝐯𝐞𝐧𝐭」  ===\n--❖-- 𝐈𝐭'𝐬 𝗜𝗺𝗿𝗮𝗻(✷‿✷) --❖--\n✢━━━━━━━━━━━━━━━✢\n\n__${title}\n\n✢━━━━━━━━━━━━━━━✢\n𝐂𝐫𝐞𝐚𝐭𝐨𝐫 : 𝗜𝗠𝗥𝗔𝗡 𝗔𝗛𝗠𝗘𝗗(✷‿✷) 」`;
+            const msg = `°「 === 「𝗣𝗿𝗲𝗳𝗶𝘅 𝐄𝐯𝐞𝐧𝐭」  ===\n--❖-- 𝐈𝐭'𝐬 一 Mдндвцв丨倫(✷‿✷) --❖--\n✢━━━━━━━━━━━━━━━✢\n\n__${title}\n\n✢━━━━━━━━━━━━━━━✢\n𝐂𝐫𝐞𝐚𝐭𝐨𝐫 : ➠ 𝗠𝗔𝗛𝗔𝗕𝗨𝗕 𝗥𝗔𝗛𝗠𝗔𝗡(✷‿✷) 」`;
 
             return api.sendMessage({
                 body: msg,
